@@ -14,8 +14,8 @@
 <body>
     <h1>Simple example</h1>
     <form action="simple" method="post">
-        <%--@declare id="email"--%><label for="email">Input your name:</label>
-        <input type="text" name="username" />
+        <label for="username">Input your name:</label>
+        <input id="username" type="text" name="username" />
         <input type="submit" value="Send" />
     </form>
 

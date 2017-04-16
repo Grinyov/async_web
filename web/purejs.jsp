@@ -1,11 +1,4 @@
 
-<%--
-  Created by IntelliJ IDEA.
-  User: Администратор
-  Date: 14.04.2017
-  Time: 1:35
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -25,7 +18,7 @@
                 }
             }
             else if (window.XMLHttpRequest) // if other browsers
-                return nre XMLHttpRequest();
+                return new XMLHttpRequest();
             else return false;
         }
 
@@ -44,7 +37,7 @@
             };
             var username = encodeURIComponent(document.getElementById("username").value);
             var parameters = "username" + username;
-            postrequest.open("post", "say-hello", true);
+            postrequest.open("post", "purejs", true);
             postrequest.setRequestHeader("content-type", "application/x-www-form-urlencoded");
             postrequest.send(parameters);
         }

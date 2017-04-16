@@ -8,6 +8,9 @@
   <h2>Start page</h2>
 
   <a href="simple.jsp"> Simple </a>
-  <a href="purejs.jsp"> Simple </a>
+  <p/>
+  <a href="purejs.jsp"> PureJS </a>
+  <p/>
+  <a href="jquery.jsp"> JQuery </a>
   </body>
 </html>
