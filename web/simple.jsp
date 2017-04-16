@@ -14,7 +14,7 @@
 <body>
     <h1>Simple example</h1>
     <form action="simple" method="post">
-        <label for="email">Input your name:</label>
+        <label >Input your name:</label>
         <input type="text" name="username" />
         <input type="submit" value="Send" />
     </form>
