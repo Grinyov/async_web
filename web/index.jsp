@@ -5,12 +5,13 @@
     <title>Start page</title>
   </head>
   <body>
-  <h2>Start page</h2>
-
-  <a href="simple.jsp"> Simple </a>
-  <p/>
-  <a href="purejs.jsp"> PureJS </a>
-  <p/>
-  <a href="jquery.jsp"> JQuery </a>
+  <h1>Demo how make async web</h1>
+  <h2>Send requests examples</h2>
+  <ul>
+      <li><a href="simple.jsp">Simple request</a></li>
+      <li><a href="javascript.jsp">JavaScript request</a></li>
+      <li><a href="jquery.jsp">JQuery request</a></li>
+  </ul>
+  <h2>Process requests examples</h2>
   </body>
 </html>

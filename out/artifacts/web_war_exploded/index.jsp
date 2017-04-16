@@ -10,5 +10,7 @@
   <a href="simple.jsp"> Simple </a>
   <p/>
   <a href="purejs.jsp"> PureJS </a>
+  <p/>
+  <a href="jquery.jsp"> JQuery </a>
   </body>
 </html>

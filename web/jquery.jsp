@@ -7,7 +7,7 @@
 </head>
     <body>
     <h1>Jquery request example</h1>
-    <form action="simple" method="post">
+    <form action="jquery" method="post">
         <label for="username">Your name:</label>
         <input id="username" type="text" name="username" />
         <input type="submit" value="Send" />
@@ -15,8 +15,11 @@
     <div id="result"></div>
     <a href="index.jsp"> Back </a>
         <script type="text/javascript">
+            // get link on our form
             var frm = $('#form');
+            // link input
             var btn = frm.find('input[type=submit]');
+            // link handler of the button
             btn.click(function (f) {
                 $.ajax({
                    type: frm.attr('method'),

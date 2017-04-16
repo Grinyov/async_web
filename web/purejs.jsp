@@ -45,7 +45,7 @@
 </head>
 <body>
 <h1>Pure js request example</h1>
-<form action="simple" method="post">
+<form action="purejs" method="post">
     <label for="username">Input your name:</label>
     <input id="username" type="text" name="username" />
     <input type="button" value="Send" onclick="sendPostRequest()"/>
