@@ -9,7 +9,7 @@
   <h2>Send requests examples</h2>
   <ul>
       <li><a href="simple.jsp">Simple request</a></li>
-      <li><a href="javascript.jsp">JavaScript request</a></li>
+      <li><a href="purejs.jsp">JavaScript request</a></li>
       <li><a href="jquery.jsp">JQuery request</a></li>
   </ul>
   <h2>Process requests examples</h2>

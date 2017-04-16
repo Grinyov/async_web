@@ -11,6 +11,13 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/web/WEB-INF/dispatcher-servlet.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -22,5 +29,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.0.M19" level="application_server_libraries" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="servlet-api" level="project" />
+    <orderEntry type="library" name="Spring-4.3.7.RELEASE" level="project" />
   </component>
 </module>
