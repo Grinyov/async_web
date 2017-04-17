@@ -23,12 +23,12 @@
                 return false;
         }
         function sendPostRequest() {
-            var mypostrequest = new ajaxRequest();
-            mypostrequest.onreadystatechange = function () {
-                if (mypostrequest.readyState === 4) {
-                    if (mypostrequest.status === 200 || window.location.href.indexOf("http") === -1) {
+            var postrequest = new ajaxRequest();
+            postrequest.onreadystatechange = function () {
+                if (postrequest.readyState === 4) {
+                    if (postrequest.status === 200 || window.location.href.indexOf("http") === -1) {
                         document.getElementById("username").value = "";
-                        document.getElementById("result").innerHTML = mypostrequest.responseText;
+                        document.getElementById("result").innerHTML = postrequest.responseText;
                     }
                     else {
                         alert("An error has occured making the request");
@@ -37,9 +37,9 @@
             };
             var username = encodeURIComponent(document.getElementById("username").value);
             var parameters = "username=" + username;
-            mypostrequest.open("post", "say-hello", true);
-            mypostrequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            mypostrequest.send(parameters);
+            postrequest.open("post", "say-hello", true);
+            postrequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            postrequest.send(parameters);
         }
     </script>
 </head>

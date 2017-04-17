@@ -6,32 +6,29 @@
     <script src="js/jquery-3.2.1.min.js"></script>
 </head>
     <body>
-    <h1>Jquery request example</h1>
-    <form action="jquery" method="post">
-        <label for="username">Your name:</label>
-        <input id="username" type="text" name="username" />
-        <input type="submit" value="Send" />
-    </form>
-    <div id="result"></div>
-    <a href="index.jsp"> Back </a>
+        <h1>JQuery request</h1>
+        <form id="formx" method="post" action="say-hello">
+            <label for="username">Your name:</label>
+            <input id="username" type="text" name="username" />
+            <input type="submit" value="Send" />
+        </form>
+        <div id="result"></div>
+        <a href="index.jsp">Back</a>
         <script type="text/javascript">
-            // get link on our form
-            var frm = $('#form');
-            // link input
+            var frm = $('#formx');
             var btn = frm.find('input[type=submit]');
-            // link handler of the button
-            btn.click(function (f) {
+            btn.click(function (e) {
                 $.ajax({
-                   type: frm.attr('method'),
+                    type: frm.attr('method'),
                     url: frm.attr('action'),
                     data: frm.serialize(),
                     success: function (data) {
                         $('#result').html(data);
                     }
                 });
-                f.preventDefault();
+                e.preventDefault();
                 return false;
-            })
+            });
         </script>
     </body>
 </html>

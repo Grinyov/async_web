@@ -1,5 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -10,8 +8,8 @@
     <body>
         <h1>Simple example</h1>
         <form action="simple" method="post">
-            <label for="email">Input your name:</label>
-            <input type="text" name="username" />
+            <label for="username">Input your name:</label>
+            <input id="username" type="text" name="username" />
             <input type="submit" value="Send" />
         </form>
         <c:choose>
