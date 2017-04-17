@@ -1,6 +1,7 @@
 package com.grinyov.web.servlet;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,6 +12,7 @@ import java.util.logging.Logger;
 /**
  * Created by vgrinyov.
  */
+@WebServlet("/say-hello")
 public class AjaxServlet extends HttpServlet {
 
     private static final Logger LOGGER = Logger.getLogger(SimpleServlet.class.getName());
