@@ -15,6 +15,8 @@
     <h2>Process requests examples</h2>
       <ul>
           <li><a href="async-simple">Simple async request</a></li>
+          <li><a href="async-executor">Example with custom async executor</a></li>
+          <li><a href="executor-pool">Example with executor pool</a></li>
       </ul>
   </body>
 </html>
