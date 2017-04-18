@@ -18,5 +18,11 @@
           <li><a href="async-executor">Example with custom async executor</a></li>
           <li><a href="executor-pool">Example with executor pool</a></li>
       </ul>
+    <h2>Spring process requests examples</h2>
+    <ul>
+        <li><a href="spring-hello">Spring simple async request</a></li>
+        <li><a href="async-executor">Example with custom async executor</a></li>
+        <li><a href="executor-pool">Example with executor pool</a></li>
+    </ul>
   </body>
 </html>
